@@ -1,0 +1,23 @@
+﻿<Window x:Class="OOP_Udalosti_IT3B.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOP_Udalosti_IT3B"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid Background="Blue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25px"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="25px"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25px"/>
+            <RowDefinition/>
+            <RowDefinition Height="25px"/>
+        </Grid.RowDefinitions>
+        <Canvas Name="Canvas1" Grid.Column="1" Grid.Row="1" Background="Aqua"/>
+
+    </Grid>
+</Window>
