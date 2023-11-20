@@ -52,6 +52,7 @@ namespace OOP_Udalosti_IT3B
 
     private void GenerateEntities()
     {
+      entities.Clear();
       Random random = new Random();
       for (int i = 0; i < 10; i++)
       {
@@ -62,6 +63,12 @@ namespace OOP_Udalosti_IT3B
         entity.Location = new Point(x, y);
         entities.Add(entity);
       }
-    }    
+    }
+
+    private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+    {
+      GenerateEntities();
+      DrawEntities();
+    }
   }
 }
