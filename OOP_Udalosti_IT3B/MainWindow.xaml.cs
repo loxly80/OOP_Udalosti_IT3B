@@ -62,7 +62,13 @@ namespace OOP_Udalosti_IT3B
         var y = random.NextDouble() * (Canvas1.ActualHeight - entity.Size);
         entity.Location = new Point(x, y);
         entities.Add(entity);
+        entity.ColorChanged += Entity_ColorChanged;
       }
+    }
+
+    private void Entity_ColorChanged()
+    {
+      DrawEntities();
     }
 
     private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
